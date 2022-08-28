@@ -87,3 +87,66 @@ release:
 	cp -Rf logo.png release/logo.png
 	cp -Rf verdana.ttf release/verdana.ttf
 	cp -Rf samples /release/samples
+
+release-win:
+	del *.o
+	$(MAKE) -C ../support clean
+	$(MAKE) -C ../support
+	$(MAKE) -C ../support files
+	$(MAKE) -C adhoc clean
+	$(MAKE) -C adhoc
+	$(MAKE) -C controls clean
+	$(MAKE) -C controls
+	$(MAKE) -C dir clean
+	$(MAKE) -C dir
+	$(MAKE) -C file clean
+	$(MAKE) -C file
+	$(MAKE) -C font clean
+	$(MAKE) -C font
+	$(MAKE) -C gfx clean
+	$(MAKE) -C gfx
+	$(MAKE) -C math clean
+	$(MAKE) -C math
+	$(MAKE) -C mp3 clean
+	$(MAKE) -C mp3
+	$(MAKE) -C net clean
+	$(MAKE) -C net
+	$(MAKE) -C system clean
+	$(MAKE) -C system
+	$(MAKE) -C texture clean
+	$(MAKE) -C texture
+	$(MAKE) -C timer clean
+	$(MAKE) -C timer
+	$(MAKE) -C usb clean
+	$(MAKE) -C usb
+	$(MAKE) -C utils clean
+	$(MAKE) -C utils
+	$(MAKE) -C wav clean
+	$(MAKE) -C wav
+	$(MAKE) -C zip clean
+	$(MAKE) -C zip
+	if not exist "release" mkdir release
+	if not exist "release\modules" mkdir release\modules
+	if not exist "release\samples" mkdir release\samples
+	copy adhoc\pge.adhoc.prx release\modules\pge.adhoc.prx
+	copy controls\pge.controls.prx release\modules\pge.controls.prx
+	copy dir\pge.dir.prx release\modules\pge.dir.prx
+	copy file\pge.file.prx release\modules\pge.file.prx
+	copy font\pge.font.prx release\modules\pge.font.prx
+	copy gfx\pge.gfx.prx release\modules\pge.gfx.prx
+	copy math\pge.math.prx release\modules\pge.math.prx
+	copy mp3\pge.mp3.prx release\modules\pge.mp3.prx
+	copy net\pge.net.prx release\modules\pge.net.prx
+	copy system\pge.system.prx release\modules\pge.system.prx
+	copy texture\pge.texture.prx release\modules\pge.texture.prx
+	copy timer\pge.timer.prx release\modules\pge.timer.prx
+	copy usb\pge.usb.prx release\modules\pge.usb.prx
+	copy utils\pge.utils.prx release\modules\pge.utils.prx
+	copy wav\pge.wav.prx release\modules\pge.wav.prx
+	copy zip\pge.zip.prx release\modules\pge.zip.prx
+	copy EBOOT.PBP release\EBOOT.PBP
+	copy pge.ini release\pge.ini
+	copy logo.png release\logo.png
+	copy verdana.ttf release\verdana.ttf
+	-robocopy samples release\samples /E /NFL /NDL /NJH /NJS /nc /ns /np /R:0 /W:0
+	echo Compiled successfully!

@@ -48,6 +48,30 @@ install:
 	cp -f pgeUsb.h $(PSPSDK)/include/pge/
 	cp -f $(STATICLIB) $(PSPSDK)/lib/
 
+install-win:
+	copy pge_build.mak "$(PSPSDK)/lib/"
+	if not exist "$(PSPSDK)/include/pge/" mkdir -p "$(PSPSDK)/include/pge/"
+	copy pgeWav.h "$(PSPSDK)/include/pge/"
+	copy pgeTimer.h "$(PSPSDK)/include/pge/"
+	copy pgeMath.h "$(PSPSDK)/include/pge/"
+	copy pge.h "$(PSPSDK)/include/pge/"
+	copy pgeNet.h "$(PSPSDK)/include/pge/"
+	copy pgeFont.h "$(PSPSDK)/include/pge/"
+	copy pgeVram.h "$(PSPSDK)/include/pge/"
+	copy pgeControls.h "$(PSPSDK)/include/pge/"
+	copy pgeGfx.h "$(PSPSDK)/include/pge/"
+	copy pgeTexture.h "$(PSPSDK)/include/pge/"
+	copy pgeZip.h "$(PSPSDK)/include/pge/"
+	copy pgeMp3.h "$(PSPSDK)/include/pge/"
+	copy pgeUtils.h "$(PSPSDK)/include/pge/"
+	copy pgeAdhoc.h "$(PSPSDK)/include/pge/"
+	copy pgeFile.h "$(PSPSDK)/include/pge/"
+	copy pgeEmulator.h "$(PSPSDK)/include/pge/"
+	copy pgeObj.h "$(PSPSDK)/include/pge/"
+	copy pgeParticle.h "$(PSPSDK)/include/pge/"
+	copy pgeUsb.h "$(PSPSDK)/include/pge/"
+	copy "$(STATICLIB)" "$(PSPSDK)/lib/"
+
 supportfiles:
 	$(MAKE) -C support clean
 	$(MAKE) -C support
