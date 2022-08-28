@@ -93,6 +93,7 @@ release-win:
 	$(MAKE) -C ..\support clean
 	$(MAKE) -C ..\support
 	$(MAKE) -C ..\support files
+	$(MAKE)
 	$(MAKE) -C adhoc clean
 	$(MAKE) -C adhoc
 	$(MAKE) -C controls clean
