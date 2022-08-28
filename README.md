@@ -21,6 +21,8 @@ Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [P
 
 ## Compiling - Windows
 do this, do that, and here i go!
+Open that: `thing.bat`. or maybe run a command:
+`tralala -s -b -rm "something/lalala/kekeke"` and wait
 
 ## Compiling - Linux
 do these, do those and here we go!
