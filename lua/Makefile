@@ -31,6 +31,7 @@ release:
 	$(MAKE) -C ../support clean
 	$(MAKE) -C ../support
 	$(MAKE) -C ../support files
+	$(MAKE)
 	$(MAKE) -C adhoc clean
 	$(MAKE) -C adhoc
 	$(MAKE) -C controls clean
@@ -87,6 +88,7 @@ release:
 	cp -Rf logo.png release/logo.png
 	cp -Rf verdana.ttf release/verdana.ttf
 	cp -Rf samples /release/samples
+	echo Compiled successfully!
 
 release-win:
 	del *.o
