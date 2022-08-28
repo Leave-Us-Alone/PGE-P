@@ -1,5 +1,5 @@
 ## About PGE-P
-Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [PGE](https://github.com/KapLex/PGE) by [InsertWittyName]() with the various amount of bug&compilation fixes.
+Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [PGE](https://github.com/KapLex/PGE) by [InsertWittyName](tias_dp@hotmail.com) and [MK2k](pge@mk2k.net) with the various amount of bug&compilation fixes by [MasterMen](https://github.com/MasterMenSilver) and [Exnonull](https://github.com/Exnonull)
 
 ![PGE-P Demo](https://user-images.githubusercontent.com/38983673/187067882-55c7727e-5ef4-40bd-a021-8f55a9ab8f69.png)
 
@@ -22,7 +22,7 @@ Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [P
 ## Compiling - Windows
 do this, do that, and here i go!
 Open that: `thing.bat`. or maybe run a command:
-`tralala -s -b -rm "something/lalala/kekeke"` and wait
+`tralala /s /b -rm "something/lalala/kekeke"` and wait
 
 ## Compiling - Linux
 do these, do those and here we go!
