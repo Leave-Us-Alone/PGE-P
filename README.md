@@ -1,11 +1,11 @@
 ## About PGE-P
-Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [PGE](https://github.com/KapLex/PGE) with the various amount of bug&compilation fixes
+Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [PGE](https://github.com/KapLex/PGE) with the various amount of bug&compilation fixes.
 
-![screenshot_n](https://www.dropbox.com/s/9e9kkcggyu95i7w/PGE-P%20Demo.png?dl=0)
+![PGE-P Demo](https://user-images.githubusercontent.com/38983673/187067882-55c7727e-5ef4-40bd-a021-8f55a9ab8f69.png)
 
 ## General Information
 
-####System Requirements to Run PGE-P:
+#### System Requirements to Run PGE-P:
 * PlayStation Portable (100X/200X/300X/Go/E-100X)
 * Prefered 6.60 or 6.61 Firmware Update
 * Custom Firmware to run unsigned applications (CFW, like PRO-C2 and so on)
