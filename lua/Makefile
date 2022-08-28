@@ -90,9 +90,9 @@ release:
 
 release-win:
 	del *.o
-	$(MAKE) -C ../support clean
-	$(MAKE) -C ../support
-	$(MAKE) -C ../support files
+	$(MAKE) -C ..\support clean
+	$(MAKE) -C ..\support
+	$(MAKE) -C ..\support files
 	$(MAKE) -C adhoc clean
 	$(MAKE) -C adhoc
 	$(MAKE) -C controls clean
