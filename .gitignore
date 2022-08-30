@@ -1,4 +1,5 @@
 # build output
+.vscode/
 EBOOT.PBP
 PARAM.SFO
 libpge.a
