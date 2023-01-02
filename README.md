@@ -20,7 +20,7 @@ Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [P
 5. From PSP's XMB start the PGE-P
 
 ## Compiling - Windows
-Download [PSPSDK](https://sourceforge.net/projects/minpspw/) and put to C:\\\
+Git clone [PSPSDK](https://github.com/Leave-Us-Alone/pspsdk) to C:\\\
 Start compile.bat in lua\ folder to build a project\
 Output will in lua\release\
 

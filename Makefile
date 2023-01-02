@@ -5,7 +5,7 @@ VERSION = 3
 LIBOBJS = support/pgesupport.o pgeWav.o pgeTimer.o pgeMath.o pgeVram.o pgeFont.o pgeControls.o pgeGfx.o pgeTexture.o pgeZip.o pgeMp3.o pgeUtils.o pgeNet.o pgeAdhoc.o pgeFile.o pgeDir.o pgeObj.o pgeUsb.o pgeSystem.o pge.o
 OBJS = $(LIBOBJS)
 
-CFLAGS = $(DEFINES) -O3 -G0 -Wall -g -D__PSP__ -DPGE_VERSION=$(VERSION)
+CFLAGS = $(DEFINES) -O3 -G0 -Wall -g -D__PSP__ -D__PGE__ -DPGE_VERSION=$(VERSION)
 CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
 ASFLAGS = $(CFLAGS)
 
@@ -26,51 +26,54 @@ $(STATICLIB): $(LIBOBJS)
 
 install:
 	cp -f pge_build.mak $(PSPSDK)/lib/
-	mkdir -p $(PSPSDK)/include/pge/
-	cp -f pgeWav.h $(PSPSDK)/include/pge/
-	cp -f pgeTimer.h $(PSPSDK)/include/pge/
-	cp -f pgeMath.h $(PSPSDK)/include/pge/
-	cp -f pge.h $(PSPSDK)/include/pge/
-	cp -f pgeNet.h $(PSPSDK)/include/pge/
-	cp -f pgeFont.h $(PSPSDK)/include/pge/
-	cp -f pgeVram.h $(PSPSDK)/include/pge/
-	cp -f pgeControls.h $(PSPSDK)/include/pge/
-	cp -f pgeGfx.h $(PSPSDK)/include/pge/
-	cp -f pgeTexture.h $(PSPSDK)/include/pge/
-	cp -f pgeZip.h $(PSPSDK)/include/pge/
-	cp -f pgeMp3.h $(PSPSDK)/include/pge/
-	cp -f pgeUtils.h $(PSPSDK)/include/pge/
-	cp -f pgeAdhoc.h $(PSPSDK)/include/pge/
-	cp -f pgeFile.h $(PSPSDK)/include/pge/
-	cp -f pgeEmulator.h $(PSPSDK)/include/pge/
-	cp -f pgeObj.h $(PSPSDK)/include/pge/
-	cp -f pgeParticle.h $(PSPSDK)/include/pge/
-	cp -f pgeUsb.h $(PSPSDK)/include/pge/
-	cp -f $(STATICLIB) $(PSPSDK)/lib/
+	mkdir -p $(PSPBIN)/include/pge/
+	cp -f pgeWav.h $(PSPBIN)/include/pge/
+	cp -f pgeTimer.h $(PSPBIN)/include/pge/
+	cp -f pgeMath.h $(PSPBIN)/include/pge/
+	cp -f pge.h $(PSPBIN)/include/pge/
+	cp -f pgeDir.h $(PSPBIN)/include/pge/
+	cp -f pgeSystem.h $(PSPBIN)/include/pge/
+	cp -f pgeNet.h $(PSPBIN)/include/pge/
+	cp -f pgeFont.h $(PSPBIN)/include/pge/
+	cp -f pgeVram.h $(PSPBIN)/include/pge/
+	cp -f pgeControls.h $(PSPBIN)/include/pge/
+	cp -f pgeGfx.h $(PSPBIN)/include/pge/
+	cp -f pgeTexture.h $(PSPBIN)/include/pge/
+	cp -f pgeZip.h $(PSPBIN)/include/pge/
+	cp -f pgeMp3.h $(PSPBIN)/include/pge/
+	cp -f pgeUtils.h $(PSPBIN)/include/pge/
+	cp -f pgeAdhoc.h $(PSPBIN)/include/pge/
+	cp -f pgeFile.h $(PSPBIN)/include/pge/
+	cp -f pgeEmulator.h $(PSPBIN)/include/pge/
+	cp -f pgeObj.h $(PSPBIN)/include/pge/
+	cp -f pgeParticle.h $(PSPBIN)/include/pge/
+	cp -f pgeUsb.h $(PSPBIN)/include/pge/
+	cp -f $(STATICLIB) $(PSPBIN)/lib/
 
 install-win:
 	copy pge_build.mak "$(PSPSDK)/lib/"
-	if not exist "$(PSPSDK)/include/pge/" mkdir -p "$(PSPSDK)/include/pge/"
-	copy pgeWav.h "$(PSPSDK)/include/pge/"
-	copy pgeTimer.h "$(PSPSDK)/include/pge/"
-	copy pgeMath.h "$(PSPSDK)/include/pge/"
-	copy pge.h "$(PSPSDK)/include/pge/"
-	copy pgeNet.h "$(PSPSDK)/include/pge/"
-	copy pgeFont.h "$(PSPSDK)/include/pge/"
-	copy pgeVram.h "$(PSPSDK)/include/pge/"
-	copy pgeControls.h "$(PSPSDK)/include/pge/"
-	copy pgeGfx.h "$(PSPSDK)/include/pge/"
-	copy pgeTexture.h "$(PSPSDK)/include/pge/"
-	copy pgeZip.h "$(PSPSDK)/include/pge/"
-	copy pgeMp3.h "$(PSPSDK)/include/pge/"
-	copy pgeUtils.h "$(PSPSDK)/include/pge/"
-	copy pgeAdhoc.h "$(PSPSDK)/include/pge/"
-	copy pgeFile.h "$(PSPSDK)/include/pge/"
-	copy pgeEmulator.h "$(PSPSDK)/include/pge/"
-	copy pgeObj.h "$(PSPSDK)/include/pge/"
-	copy pgeParticle.h "$(PSPSDK)/include/pge/"
-	copy pgeUsb.h "$(PSPSDK)/include/pge/"
-	copy "$(STATICLIB)" "$(PSPSDK)/lib/"
+	if not exist "$(PSPBIN)/include/pge/" mkdir "$(PSPBIN)/include/pge/"
+	copy pgeWav.h "$(PSPBIN)/include/pge/"
+	copy pgeTimer.h "$(PSPBIN)/include/pge/"
+	copy pgeMath.h "$(PSPBIN)/include/pge/"
+	copy pge.h "$(PSPBIN)/include/pge/"
+	copy pgeDir.h "$(PSPBIN)/include/pge/"
+	copy pgeSystem.h "$(PSPBIN)/include/pge/"
+	copy pgeNet.h "$(PSPBIN)/include/pge/"
+	copy pgeFont.h "$(PSPBIN)/include/pge/"
+	copy pgeVram.h "$(PSPBIN)/include/pge/"
+	copy pgeControls.h "$(PSPBIN)/include/pge/"
+	copy pgeGfx.h "$(PSPBIN)/include/pge/"
+	copy pgeTexture.h "$(PSPBIN)/include/pge/"
+	copy pgeZip.h "$(PSPBIN)/include/pge/"
+	copy pgeMp3.h "$(PSPBIN)/include/pge/"
+	copy pgeUtils.h "$(PSPBIN)/include/pge/"
+	copy pgeAdhoc.h "$(PSPBIN)/include/pge/"
+	copy pgeFile.h "$(PSPBIN)/include/pge/"
+	copy pgeObj.h "$(PSPBIN)/include/pge/"
+	copy pgeParticle.h "$(PSPBIN)/include/pge/"
+	copy pgeUsb.h "$(PSPBIN)/include/pge/"
+	copy "$(STATICLIB)" "$(PSPBIN)/lib/"
 
 supportfiles:
 	$(MAKE) -C support clean

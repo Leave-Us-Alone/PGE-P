@@ -84,6 +84,7 @@ release:
 	cp -Rf wav/pge.wav.prx release/modules/pge.wav.prx
 	cp -Rf zip/pge.zip.prx release/modules/pge.zip.prx
 	cp -Rf EBOOT.PBP release/EBOOT.PBP
+	cp -Rf script.lua release/script.lua
 	cp -Rf pge.ini release/pge.ini
 	cp -Rf logo.png release/logo.png
 	cp -Rf verdana.ttf release/verdana.ttf
@@ -148,6 +149,7 @@ release-win:
 	copy wav\pge.wav.prx release\modules\pge.wav.prx
 	copy zip\pge.zip.prx release\modules\pge.zip.prx
 	copy EBOOT.PBP release\EBOOT.PBP
+	copy script.lua release\script.lua
 	copy pge.ini release\pge.ini
 	copy logo.png release\logo.png
 	copy verdana.ttf release\verdana.ttf

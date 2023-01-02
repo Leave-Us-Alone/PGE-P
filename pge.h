@@ -19,28 +19,31 @@ extern "C" {
 /** @defgroup pge Engine
  *  @{
  */
-#include <pspkernel.h>
-//#include <pspkerneltypes.h>
 
-/*#include "pgeAdhoc.h"
-#include "pgeWav.h"
-#include "pgeTimer.h"
-#include "pgeMath.h"
-#include "pgeVram.h"
-#include "pgeFont.h"
-#include "pgeNet.h"
-#include "pgeControls.h"
-#include "pgeGfx.h"
-#include "pgeTexture.h"
-#include "pgeZip.h"
-#include "pgeMp3.h"
-#include "pgeUtils.h"
-#include "pgeFile.h"
-#include "pgeDir.h"
-#include "pgeObj.h"
-#include "pgeParticle.h"
-#include "pgeUsb.h"
-#include "pgeSystem.h"*/
+#ifdef __PSP__
+	#include <pspkernel.h>
+	#include <pspkerneltypes.h>
+
+	#include "pgeAdhoc.h"
+	#include "pgeWav.h"
+	#include "pgeTimer.h"
+	#include "pgeMath.h"
+	#include "pgeVram.h"
+	#include "pgeFont.h"
+	#include "pgeNet.h"
+	#include "pgeControls.h"
+	#include "pgeGfx.h"
+	#include "pgeTexture.h"
+	#include "pgeZip.h"
+	#include "pgeMp3.h"
+	#include "pgeUtils.h"
+	#include "pgeFile.h"
+	#include "pgeDir.h"
+	#include "pgeObj.h"
+	#include "pgeParticle.h"
+	#include "pgeUsb.h"
+	#include "pgeSystem.h"
+#endif
 
 #ifndef __PSP__
 	#include "SDL.h"
