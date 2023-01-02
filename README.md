@@ -5,6 +5,8 @@ Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [P
 
 ## General Information
 
+Current State: Being Developed, No Working Releases yet.
+
 #### System Requirements to Run PGE-P:
 * PlayStation Portable (100X/200X/300X/Go/E-100X)
 * Prefered 6.60 or 6.61 Firmware Update
@@ -16,14 +18,13 @@ Phoenix Game Engine Plus (PGE-P) is a fork of the popular PSP Lua Game engine [P
 1. Go to the "Releases" page on this Github repository
 2. Select the latest one and start downloading it
 3. Unzip the PGE-P after download
-4. Put the "PGE-P" folder onto your PSP's Memory Card, (for example: F:\PSP\GAME\)
+4. Put the "PGE-P" folder onto your PSP's Memory Card, (for example: `F:\PSP\GAME\`)
 5. From PSP's XMB start the PGE-P
 
 ## Compiling - Windows
-Git clone [PSPSDK](https://github.com/Leave-Us-Alone/pspsdk) to C:\\\
-Start compile.bat in lua\ folder to build a project\
-Output will in lua\release\
+Git clone [PSPSDK](https://github.com/Leave-Us-Alone/pspsdk) to `C:\`
+Start `compile.bat` in lua folder to build a project Output will be in `lua\release\`
 
 ## Compiling - Linux
-These steps aren't finished\
+These steps aren't finished
 If you have Linux and you ready to help us or you know how to fix compile.sh for Linux users - contact us 
